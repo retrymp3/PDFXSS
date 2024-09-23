@@ -1,1 +1,1 @@
-<script>alert(0)</script>
+<svg/onload=alert(1)><svg>
