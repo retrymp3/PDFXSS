@@ -29,7 +29,7 @@
       const recipient = cells[2].textContent.trim();
       const status = cells[3].textContent.trim();
       
-      if (sender === 'manager' && recipient === 'adragos' && (status === 'pending' || status === 'confirmed')) {
+      if (sender === 'manager' && recipient === 'birdbirdbird' && (status === 'pending' || status === 'confirmed')) {
         transactionId = id;
       }
     }
