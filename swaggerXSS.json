@@ -1,0 +1,10 @@
+{
+    "swagger": "2.0",
+    "url": "https://raw.githubusercontent.com/mathis2001/CVE-2018-25031/main/xss.yaml",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/mathis2001/CVE-2018-25031/main/xss.yaml",
+            "name": "Foo"
+        }
+    ]
+}
